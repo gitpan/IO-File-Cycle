@@ -3,7 +3,6 @@ abstract: 'Easily split output file while writing'
 author:
   - 'Nic Wolff <nic@angel.net>'
 build_requires:
-  IO::File: 0
   Test::More: 0
 configure_requires:
   Module::Build: 0.4
@@ -17,9 +16,10 @@ name: IO-File-Cycle
 provides:
   IO::File::Cycle:
     file: lib/IO/File/Cycle.pm
-    version: 0.02
+    version: 0.03
 requires:
+  IO::File: 0
   perl: 5.006
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.02
+version: 0.03
